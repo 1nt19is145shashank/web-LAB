@@ -1,0 +1,28 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            function fun()
+            {
+                let reg=/[a-zA-Z0-9]+@[a-z]+\.[a-z]{2,3}/
+                let mat=document.getElementById("text").value;
+                if(reg.test(mat))
+                {
+                    document.write("email valid ")
+                }
+                else{
+                    document.write("email not a valid ")
+                }
+            }
+        </script>
+
+        <center>
+            <h1>enter the string to match email address</h1>
+        
+        <input type="text" id="text">
+        <input type="submit" onclick="fun()">
+        </center>
+    </body>
+</html>

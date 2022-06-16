@@ -1,0 +1,24 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            function fun()
+            {
+                let reg=/\d{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])/
+                let mat=document.getElementById("text").value;
+                if(reg.test(mat))
+                {
+                    document.write("date match ")
+                }
+                else{
+                    document.write("date not match")
+                }
+            }
+        </script>
+        <h1>enter the string to match date</h1>
+        <input type="text" id="text">
+        <input type="submit" onclick="fun()">
+    </body>
+</html>
